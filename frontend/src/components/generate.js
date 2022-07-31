@@ -3,7 +3,13 @@ import { faker } from '@faker-js/faker';
 export function Generate() {
     let name = faker.name.findName()
     let email = faker.internet.email()
-    let test = faker.address.streetAddress()
+    let address = faker.address.streetAddress()
 
-    return [name, email, test]
+    return [
+        {
+            name: name,
+            email: email,
+            address: address
+        }
+    ]
 }
