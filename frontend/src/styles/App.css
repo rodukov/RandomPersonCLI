@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
 .App {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -22,10 +25,12 @@
     margin-left: 25px;
     margin-right: 30px;
     display: block;
+    overflow-x: hidden;
+    height: 265px;
     width: 100%;
 }
 .paragraph {
-    font-family: 'Arial';
+    font-family: 'Libre Franklin';
     display: flex;
     padding-bottom: 5px;
     border-bottom: 1px solid rgb(184, 184, 184);
@@ -33,4 +38,41 @@
 .info {
     text-align: right;
     display: inline-block;
+}
+.welc {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(17, 17, 17);
+    margin: 0;
+    margin-top: 20px;
+}
+.welcgg {
+    font-family: 'Noto Serif Display', serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(17, 17, 17);
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+}
+
+@media (max-width: 1339px) {
+    .App {
+        display: block;
+    }
+}
+.center {
+    margin: 0;
+    text-align: center;
+}
+@media (max-width: 825px) {
+    .FakeHuman {
+        display: block;
+    }
+    .data {
+        margin: 0;
+    }
 }
