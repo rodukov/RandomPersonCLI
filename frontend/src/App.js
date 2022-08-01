@@ -2,19 +2,17 @@
 import './styles/App.css'
 import { Generate } from './components/generate'
 function App() {
-
+  document.title = "Generated 6 peoples"
   return (
     <div className="App">
-      {Generate().map(item => {
-        <div className="FakeHuman">
-          <img src="https://thispersondoesnotexist.com/image" class="person_image" alt="this_is_human_do_not_exists"></img>
-          <div className="data">
-            <p className="paragraph email">Myra Von</p>
-            <p className="paragraph email">eefe@yahoo.com</p>
-            <p className="paragraph address">8387 Kailee Camp</p>
+        {Generate(6).map(human => {
+          return <div className="FakeHuman">
+            <img src="https://thispersondoesnotexist.com/image" className="person_image" alt="this_is_human_do_not_exists"></img>
+            <div className="data">
+              {human.map(dataitem => <p className="paragraph">{dataitem}</p> )}
+            </div>
           </div>
-        </div>
-      })}
+        })}
     </div>
   );
 }
