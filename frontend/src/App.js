@@ -10,7 +10,7 @@ function App() {
     <div className="App">
         {Generate(2).map(human => {
           return <div className="FakeHuman">
-            <p className="center"><img src="https://thispersondoesnotexist.com/image" className="person_image" alt="this_is_human_do_not_exists"></img></p>
+            <p className="center"><img src="https://thispersondoesnotexist.com/" className="person_image" alt="this_is_human_do_not_exists"></img></p>
             <div className="data">
               {human.map(dataitem => <p className="paragraph">{dataitem}</p> )}
             </div>
